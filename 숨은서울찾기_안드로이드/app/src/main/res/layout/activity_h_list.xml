@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="14dp">
+
+    <!--탭-->
+    <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp">
+
+            <ImageButton
+                android:id="@+id/Hlist_btn_first"
+                android:layout_width="78dp"
+                android:layout_height="35dp"
+                android:text="전체"
+                android:background="@drawable/category01yellow"/>
+
+            <ImageButton
+                android:id="@+id/Hlist_btn_second"
+                android:layout_width="99dp"
+                android:layout_height="35dp"
+                android:text="정치역사"
+                android:background="@drawable/category02"
+                android:layout_marginLeft="14dp"/>
+
+            <ImageButton
+                android:id="@+id/Hlist_btn_third"
+                android:layout_width="99dp"
+                android:layout_height="35dp"
+                android:text="시민생활"
+                android:background="@drawable/category03"
+                android:layout_marginLeft="14dp"/>
+
+            <ImageButton
+                android:id="@+id/Hlist_btn_fourth"
+                android:layout_width="99dp"
+                android:layout_height="35dp"
+                android:text="산업노동"
+                android:background="@drawable/category04"
+                android:layout_marginLeft="14dp"/>
+
+            <ImageButton
+                android:id="@+id/Hlist_btn_fifth"
+                android:layout_width="99dp"
+                android:layout_height="35dp"
+                android:text="도시관리"
+                android:background="@drawable/category05"
+                android:layout_marginLeft="14dp"/>
+
+            <ImageButton
+                android:id="@+id/Hlist_btn_sixth"
+                android:layout_width="99dp"
+                android:layout_height="35dp"
+                android:text="문화예술"
+                android:background="@drawable/category06"
+                android:layout_marginLeft="14dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes"
+        android:id="@+id/Hlist_tv_likes"
+        android:textColor="@android:color/black"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="7dp"
+        android:id="@+id/Hlist_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

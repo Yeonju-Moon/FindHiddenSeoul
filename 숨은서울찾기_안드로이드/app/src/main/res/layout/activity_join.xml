@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_gravity="left"
+        android:background="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/join_tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Sign Up"
+        android:textColor="@android:color/black" />
+
+    <!-- id -->
+    <EditText
+        android:id="@+id/joinId"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/id"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <!-- nickname -->
+    <EditText
+        android:id="@+id/joinNickname"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/username"
+        android:gravity="center" />
+
+    <!-- pw -->
+    <EditText
+        android:id="@+id/joinPw"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pw"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/joinPw2"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/pw_check"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/pwText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <!-- ph -->
+    <EditText
+        android:id="@+id/joinPh"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/phone"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/slash" />
+
+    <!-- 회원가입 -->
+    <Button
+        android:id="@+id/joinNowBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ok_2"
+        android:onClick="joinClicked" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginLeft="14dp">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/list_item2_iv_mainImg"/>
+
+    <LinearLayout
+        android:layout_marginTop="15.5dp"
+        android:layout_marginBottom="15.5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 구 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item2_tv_gu"
+            android:textColor="@android:color/black"/>
+
+        <!-- 장소 -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item2_tv_heritage_name"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</LinearLayout>

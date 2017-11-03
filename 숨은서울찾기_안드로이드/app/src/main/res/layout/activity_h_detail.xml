@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Hdetail_scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="247dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/Hdetail_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.8"
+                    android:focusable="true">
+                </android.support.v4.view.ViewPager>
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="구"
+                    android:id="@+id/Hdetail_tv_guAndName"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageButton
+                    android:background="@drawable/leftgray"
+                    android:layout_width="13dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/Hdetail_btn_left"
+                    android:text="left"
+                    android:enabled="false"
+                    android:onClick="nOnClick"
+                    android:layout_marginRight="24.5dp"/>
+                <ImageButton
+                    android:background="@drawable/rightblack"
+                    android:layout_width="13dp"
+                    android:layout_height="16dp"
+                    android:id="@+id/Hdetail_btn_right"
+                    android:text="right"
+                    android:onClick="nOnClick"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="21.5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Hdetail_tv_h_name"
+                    android:layout_toLeftOf="@+id/Hdetail_btn_liked"
+                    android:text="name"/>
+
+                <Button
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/selector_button"
+                    android:id="@+id/Hdetail_btn_liked"
+                    android:layout_width="54dp"
+                    android:layout_height="18dp"
+                    android:onClick="nOnClick"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="21.5dp"
+                    android:layout_marginRight="21.5dp"
+                    android:id="@+id/Hdetail_tv_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="detail" />
+
+                <Button
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_button2"
+                    android:layout_width="55dp"
+                    android:layout_height="19dp"
+                    android:id="@+id/Hdetail_btn_more"
+                    android:onClick="nOnClick"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="21.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review"
+                    android:id="@+id/Hdetail_tv_review"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <ImageButton
+                        android:background="@drawable/writebutton"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="47dp"
+                        android:layout_height="34dp"
+                        android:id="@+id/Hdetail_btn_addReview"
+                        android:onClick="nOnClick"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ListView
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="21.5dp"
+                android:id="@+id/Hdetail_listview_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Hdetail_tv_noReview"
+                android:gravity="center"
+                android:text="첫 방문자가 되어보세요!"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:background="@drawable/top"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/Hdetail_btn_top"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
