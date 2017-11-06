@@ -12,7 +12,7 @@ router.post('/', function (req, res, next) {
 
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
         console.log(' get_mypage_data >>> Decoded user index:' + decoded.user_index);
 
@@ -97,7 +97,7 @@ router.post('/myreview_recent', function (req, res, next) {
 
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
         console.log(' get_mypage_data/myreview_recent >>> Decoded user index:' + decoded.user_index);
 
@@ -128,7 +128,7 @@ router.post('/myreview', function (req, res, next) {
 
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
         console.log(' get_mypage_data/myreview >>> Decoded user index:' + decoded.user_index);
 
@@ -159,7 +159,7 @@ router.post('/mylike', function (req, res, next) {
 
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
         console.log(' get_mypage_data/myreview_like >>> Decoded user index:' + decoded.user_index);
 
@@ -187,7 +187,7 @@ router.post('/more_liked', function (req, res, next) {
 
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
         console.log(' get_mypage_data/more_liked >>> Decoded user index:' + decoded.user_index);
 

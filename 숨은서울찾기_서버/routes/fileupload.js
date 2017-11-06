@@ -52,7 +52,7 @@ router.post('/', upload.single('review_img'), function (req, res, next) {
 
     if (token != null && token.length > 0) {
 		
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
 		
         console.log(' fileupload >>> Decoded user index:' + decoded.user_index);

@@ -13,7 +13,7 @@ router.post('/', function (req, res, next) {
     //토큰을 request한경우
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
         console.log(' get_main_data >>> Decoded user index:' + decoded.user_index);
 

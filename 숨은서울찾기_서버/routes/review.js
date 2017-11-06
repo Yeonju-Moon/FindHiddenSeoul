@@ -41,7 +41,7 @@ router.post('/modify', upload.single('update_review_img'), function (req, res, n
 	
 	if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
         console.log(' review >>> Decoded user index:' + decoded.user_index);
 		
@@ -110,7 +110,7 @@ router.post('/delete', function (req, res, next) {
     //토큰을 request한경우
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
         console.log(' review >>> Decoded user index:' + decoded.user_index);
 

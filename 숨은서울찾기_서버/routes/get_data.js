@@ -27,7 +27,7 @@ router.post('/like_check', function (req, res, next) {
 
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
 
         connection.query("SELECT count(*) AS likes_num FROM ?? WHERE like_heritage_index = ? AND like_user_index = ?;", ['heritage_like', heritage_index, decoded.user_index], function (error, cursor) {
@@ -62,7 +62,7 @@ router.post('/like', function (req, res, next) {
 
     if (token != null && token.length > 0) {
 
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
     
         //받은 인덱스의 사용자가 특정 유산에대한 좋아요를 눌렀는지 확인
@@ -172,7 +172,7 @@ router.post('/review', function (req, res, next) {
 	var token = req.body.token;
 
     if (token != null && token.length > 0) {
-        var secret = 'cjsckqkr';
+        var secret = '***';
         token = jwt.decode(token, secret);
     }
 
@@ -244,7 +244,7 @@ router.post('/review_check', function (req, res, next) {
     var heritage_index = req.body.heritage_index;
 
     if (token != null && token.length > 0) {
-        var secret = 'cjsckqkr';
+        var secret = '***';
         var decoded = jwt.decode(token, secret);
 
         connection.query("SELECT * FROM ?? WHERE review_user_index = ? AND review_heritage_index = ?;", ['review', decoded.user_index, heritage_index], function (error, cursor) {

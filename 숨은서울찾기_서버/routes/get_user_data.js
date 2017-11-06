@@ -27,7 +27,7 @@ router.post('/user', function (req, res, next) {
 
             //JWT
             var body = { user_index: cursor[0].user_index };
-            var secret = 'cjsckqkr';
+            var secret = '***';
             var token = jwt.encode(body, secret);
 
             res.json({token: token});
@@ -51,7 +51,7 @@ router.post('/user', function (req, res, next) {
 
                     //JWT
                     var body = { user_index: user_idx };
-                    var secret = 'cjsckqkr';
+                    var secret = '***';
                     var token = jwt.encode(body, secret);
 
                     console.log('token :' + token);
@@ -68,28 +68,5 @@ router.post('/user', function (req, res, next) {
     });
 });
 
-/*
-router.post('/test', function (req, res) {
-
-    //console.log(req);
-
-    var sent_token = req.body.token;
-    console.log(sent_token);
-    
-    var secret = 'cjsckqkr';
-    var d = jwt.decode(sent_token, secret);
-    //console.log('decoded:' + JSON.stringify(d));
-    console.log('토큰 받았는지 확인용 !! decoded user index:' + d.user_index);
-
-
-    connection.query("SELECT ?? FROM ?? WHERE user_index  = ?;", ['nick_name', 'user', d.user_index], function (error, cursor) {
-        if (undefined !== cursor && cursor.length > 0) {
-
-            res.json(cursor[0]);
-        }
-        else
-            res.status(503).json(error);
-    });
-});*/
 
 module.exports = router;

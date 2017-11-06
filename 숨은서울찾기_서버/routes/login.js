@@ -29,7 +29,7 @@ router.post('/', function (req, res, next) {
 
                     //JWT
                     var body = { user_index: user_idx };
-                    var secret = 'cjsckqkr';
+                    var secret = '***';
                     var token = jwt.encode(body, secret);
 
                     console.log('token :' + token);
